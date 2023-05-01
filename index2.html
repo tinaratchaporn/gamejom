@@ -1,0 +1,33 @@
+<!doctype html>
+ <html>
+  <head>
+       <title>Ping-Pong</title>
+  </head>
+       <style>
+           .winningmsg{
+           color:blue;
+           background: red;
+           font-size:3em;
+        }
+           canvas{
+           border:solid 1px white; 
+           margin-left:20%; 
+           margin-top:5%;
+           box-shadow:0px 3px 3px 20px;
+           border-radius:20px;
+        }
+      </style>
+  <body style="background:whitesmoke">
+      <canvas id="pong" width="900%" height="600%"></canvas>
+      <section class="reset-buttons">
+        <div class="reset-button">
+            <button class="reset-button double">
+                RestartGame
+            </button>
+           
+        </div>      
+    
+      <button onclick = "restartGame()" id="winmsg"></button>
+      <script src = "paddle.js"></script>
+  </body>
+</html>
